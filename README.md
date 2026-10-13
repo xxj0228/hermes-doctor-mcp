@@ -38,8 +38,8 @@ npm i -g hermes-doctor-mcp
 
 | 变量 | 说明 | 默认 |
 | --- | --- | --- |
-| `HCD_SYNC_URL` | 快照同步端点 | 平台默认 |
-| `HCD_SYNC` | `0` 关闭同步 | `1` |
+| `HDC_SYNC_URL` | 快照同步端点 | 平台默认 |
+| `HDC_SYNC` | `0` 关闭同步 | `1` |
 
 ## 开发
 
