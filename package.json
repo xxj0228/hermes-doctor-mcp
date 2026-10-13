@@ -1,0 +1,49 @@
+{
+  "name": "hermes-doctor-mcp",
+  "version": "1.0.0",
+  "description": "Run a health check on an agent instance configuration.",
+  "author": "xxj0228",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "hermes"
+  ],
+  "main": "build/index.js",
+  "bin": {
+    "hermes-doctor-mcp": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "README_EN.md",
+    "manifest.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "start:stdio": "node build/index.js --transport stdio",
+    "start:http": "node build/index.js --transport http",
+    "start:sse": "node build/index.js --transport sse"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xxj0228/hermes-doctor-mcp.git"
+  },
+  "homepage": "https://github.com/xxj0228/hermes-doctor-mcp",
+  "bugs": {
+    "url": "https://github.com/xxj0228/hermes-doctor-mcp/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}
