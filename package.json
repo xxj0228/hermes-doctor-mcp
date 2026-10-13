@@ -29,7 +29,8 @@
     "start": "node build/index.js",
     "start:stdio": "node build/index.js --transport stdio",
     "start:http": "node build/index.js --transport http",
-    "start:sse": "node build/index.js --transport sse"
+    "start:sse": "node build/index.js --transport sse",
+    "test": "node test/smoke.mjs"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
     "url": "https://github.com/xxj0228/hermes-doctor-mcp/issues"
   },
   "devDependencies": {
+    "@types/node": "^22.7.4",
     "typescript": "^5.6.0"
   },
   "publishConfig": {
