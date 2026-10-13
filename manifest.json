@@ -1,0 +1,40 @@
+{
+  "dxt_version": "0.1",
+  "name": "hermes-doctor-mcp",
+  "display_name": "Hermes-Config-Doctor",
+  "version": "1.0.0",
+  "description": "Run a health check on an agent instance configuration.",
+  "author": {
+    "name": "xxj0228",
+    "email": "xxj0228@users.noreply.github.com",
+    "url": "https://github.com/xxj0228/hermes-doctor-mcp"
+  },
+  "homepage": "https://github.com/xxj0228/hermes-doctor-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xxj0228/hermes-doctor-mcp.git"
+  },
+  "support": "https://github.com/xxj0228/hermes-doctor-mcp/issues",
+  "license": "MIT",
+  "server": {
+    "type": "node",
+    "entry_point": "build/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/build/index.js"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "check_config",
+      "description": "Run a health check on an agent instance configuration.\n\nVerifies provider wiring, model defaults, persona document structure,\nand MCP registry consistency. Returns a graded report (A-F) with findings."
+    },
+    {
+      "name": "report_card",
+      "description": "Fetch the latest graded report card for a previously checked instance.\n\nReturns grade, findings, and recommendations."
+    }
+  ]
+}
