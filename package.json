@@ -16,7 +16,7 @@
   ],
   "main": "build/index.js",
   "bin": {
-    "hermes-doctor-mcp": "./build/index.js"
+    "hermes-doctor-mcp": "build/index.js"
   },
   "files": [
     "build",
@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xxj0228/hermes-doctor-mcp.git"
+    "url": "git+https://github.com/xxj0228/hermes-doctor-mcp.git"
   },
   "homepage": "https://github.com/xxj0228/hermes-doctor-mcp",
   "bugs": {
